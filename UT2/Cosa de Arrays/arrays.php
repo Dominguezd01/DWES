@@ -8,9 +8,18 @@
 </head>
 <body>
     <?php 
-        $numeros = [[3,5],7,6];
-        
-        echo $numeros
+        $ganadores= ["Tenis" => "María Alonso", 
+                    "Ajedrez" => "Antonio López",
+                    "Ping Pong" => "Ana Benito", 
+                    "Mus"=> "Luis Martin"];
+
+        foreach($ganadores as $valor){
+            echo "$valor<br>";
+        }
+
+         foreach($ganadores as $clave => $valor){
+            echo "El gandor de $clave es $valor<br>";
+         }
     ?>
 </body>
 </html>
