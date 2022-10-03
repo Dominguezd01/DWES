@@ -10,7 +10,7 @@
     <?php 
         $numeros = [5,7,6];
         
-        echo $numeros[1];
+        echo $numeros[1]
     ?>
 </body>
 </html>
