@@ -11,8 +11,6 @@
         $numeros = [5,7,6];
         
         echo $numeros[1];
-        echo "hola"
-
     ?>
 </body>
 </html>
