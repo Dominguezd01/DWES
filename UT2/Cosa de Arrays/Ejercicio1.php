@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+        echo "----- Ejercicio 1 ----- <br>";
         $numeros = [2,-5,78,-56,3];
         
         function numerosNegativos($numeros){
@@ -49,13 +50,102 @@
             for($i = sizeof($numeros)-1;$i>=0;$i--){
                 echo "$numeros[$i] ";
             } 
+            echo "<br>";
         }
+        
+        function newArray($numeros){
+            $newArray = [];
+
+
+            for($i=0;$i<sizeof($numeros);$i++){
+                
+                $newArray[$i] = $numeros[$i]*2;
+            }
+            echo "El nuevo Array es: ";
+            foreach($newArray as $key){
+                echo "$key ";
+            }
+            echo "<br>";
+        }
+
+
+        function dobleMedia($numeros){
+            $newArray = [];
+            for($i = 0; $i<sizeof($numeros); $i++){
+                $newArray[$i] = $numeros[$i]+2; 
+            }
+            $sum = 0;
+            foreach($newArray as $key){
+                $sum += $key;
+            }
+            echo "La media del nuevo array es: ", $sum/sizeof($newArray),"<br> ";
+        }
+
 
         numerosNegativos($numeros);
         media($numeros);
         cuadradoDePosicion($numeros);
         arrayInverso($numeros);
+        newArray($numeros);
+        dobleMedia($numeros);
 
+        echo "----- Ejercicio 2 ----- <br>";
+
+        $horasLectivas = [
+            "Desarrollo Entorno Servidor" => 9,
+            "Desarrollo Entorno Cliente" => 8,
+            "Despliegue de Aplicaciones Web" => 4,
+            "Empresa e Iniciativa emprendedora" => 3,
+            "Interfaces Web" => 6,
+        ];
+        
+        function mostrarHoras($horasLectivas){
+            foreach($horasLectivas as $key => $horas ){
+                echo "<p>El numero de horas en  $key es: $horasLectivas[$key]";
+            }
+            echo "<br>";
+        }
+        mostrarHoras($horasLectivas);
+
+        echo "----- Ejercicio 3 ----- <br>";
+
+        $estacionesDelAño = [
+            "Primavera" => 1,
+            "Verano" => 123213,
+            "Otoño" => 200,
+            "Invierno" => 5,
+        ];
+        $estacionMenor = "";
+        function menorDias($estacionesDelAño){
+            $min =10000;
+            foreach($estacionesDelAño as $estacion => $dias){
+                if($min>$dias){
+                    $min = $dias;
+                    $estacionMenor = $estacion;
+                }
+            }   
+            echo "<p>La estacion con menos dias es ",$estacionMenor, " con  $min</p>";
+        }
+
+        menorDias($estacionesDelAño);
+
+        echo "----- Ejercicio 4 ----- <br>";
+
+        $matriz = [[1,0],
+                   [0,1]];
+        
+        function matrizIndetidad($matriz){
+            
+            for($i = 0; $i<sizeof($matriz);$i++){
+                for($j = 0;$j<2;$j++){
+                    if($matriz[$i][$j] >=1){}
+
+                }
+                echo "<br>";
+            }
+        }
+        matrizIndetidad($matriz);
+        
     ?>
 </body>
 </html>
