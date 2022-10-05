@@ -131,15 +131,15 @@
 
         echo "----- Ejercicio 4 ----- <br>";
 
-        $matriz = [[1,0],
-                   [0,1]];
+        $matriz = [[1,0,0],
+                   [0,1,0],
+                   [0,0,1]];
         
         function matrizIndetidad($matriz){
             
             for($i = 0; $i<sizeof($matriz);$i++){
-                for($j = 0;$j<2;$j++){
-                    if($matriz[$i][$j] >=1){}
-
+                for($j = 0;$j<3;$j++){
+                    echo $matriz[$i][$j];
                 }
                 echo "<br>";
             }
