@@ -131,21 +131,42 @@
 
         echo "----- Ejercicio 4 ----- <br>";
 
-        $matriz = [[1,0,0],
-                   [0,1,0],
-                   [0,0,1]];
+        $matriz = [[1,0,0,8],
+                   [0,2,4,7],
+                   [0,0,3,4]];
         
         function matrizIndetidad($matriz){
             
             for($i = 0; $i<sizeof($matriz);$i++){
-                for($j = 0;$j<3;$j++){
+                for($j = 0;$j<4;$j++){
                     echo $matriz[$i][$j];
                 }
                 echo "<br>";
             }
         }
         matrizIndetidad($matriz);
+
+        function matrizSimetrica($matriz){
+            $dimensiones = sizeof($matriz) ;
+            $matrizSimetrica = true;
+            for ($i=0; $i < $dimensiones ; $i++) {
+                for ( $j=0 ; $j < $dimensiones ; $j ++ ) {
+                    if ($matriz [ $i ] [ $j ] != $matriz [ $j ] [ $i ] ) {
+                        $matrizSimetrica = false ;
+                    }
+                }
+            }
+            if ($matrizSimetrica == true ) {
+                echo " Ser Simetrica " ;
+            } else {
+                echo " No ser Simetrica " ;
+            }
+        }
+
+        matrizSimetrica($matriz)
         
+            
+                
     ?>
 </body>
 </html>

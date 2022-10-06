@@ -1,0 +1,12 @@
+include <NombreArchivo> --> Warning en caso de que no exista el Archivo   
+                            pero ejecucion continua
+
+require <NombreArchivo> --> Error que detiene la ejecucion si no existe el
+                            archivo.
+
+include_once/required_once <NombreArchivo> --> Solo se puede incluir una vez. 
+                                               No deja volver a incluir el codigo 
+                                               que ya este presente.
+                                            
+
+                                
