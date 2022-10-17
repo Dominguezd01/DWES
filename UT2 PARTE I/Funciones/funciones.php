@@ -31,4 +31,8 @@
         $r = $operacion($valor1, $valor2);
         return $r;
     }
+
+    function mostrar ($a, $b, $c){
+        echo $a, $b, $c, "<br>";
+    }
 ?>

@@ -6,7 +6,7 @@
     echo "La resta es ", resta(34,25), "<br>";
     echo multiplicar_a(5, $t);
     $operacion = "resta";
-    echo calcular($operacion,10,20);
+    echo calcular($operacion,10,20),"<br>";
 
-    
+    mostrar(3,6,7);
 ?>
