@@ -39,10 +39,14 @@
         global $var1;
         $GLOBALS["var2"] = $var1+10;
     }
-
+    function ambito7(&$p){
+        $p++;
+    }
+    
     function ambito8(){
-        $var1 = VALOR*2;
-        define("OTRO_VALOR", -50);
+        $var1=VALOR*2;
+        define('OTRO_VALOR', -50);
         return $var1;
     }
+
 ?>

@@ -21,4 +21,5 @@
     const VALOR =4;
     echo "Pasando por el ambito8(): ", ambito8();
 
+    
 ?>
