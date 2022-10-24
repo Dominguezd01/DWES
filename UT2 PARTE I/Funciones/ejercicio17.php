@@ -12,5 +12,5 @@ function dias_hasta_navidad($mes, $dia, $año){
     return (int)$dias;
 }
 
-echo dias_hasta_navidad(25,12,2050), " días hasta Navidad";
+echo dias_hasta_navidad(25,12,2022), " días hasta Navidad";
 ?>        
