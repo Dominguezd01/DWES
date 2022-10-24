@@ -1,0 +1,27 @@
+Definicion clases
+
+class nombre_clase{
+
+    [public|private|protected] $atributo = expresion_esclar -> Default es publico 
+
+    [public|private|protected] function método(){....}
+    
+}
+
+Las clases van nombradas con una letra o guión bajo y una serie de letas numeros y guiones.
+
+
+La expresion_esclar permite incializar un atributo pero no puede contener varibles ni funciones
+
+Visiblidad atributos
+    public
+
+
+Metodos mágicos 
+    Los métodos mágicos son métodos especiales que sobreescriben acciones por defecto cuando 
+    se realizan ciertas acciones sobre un objeto.
+
+    __construct()
+        Se invoca cuando se instancia la clase --> Literalmente un constructor
+
+    
