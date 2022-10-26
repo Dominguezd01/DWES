@@ -1,6 +1,6 @@
 <?php
     require_once("./AlumnoBecado.php");
-    $ana = new Alumno("Daniel", 27,007,25);
+    $ana = new Alumno("😒", 27,007,25);
     
     echo $ana -> nom,"<br>";
     echo $ana -> edad,"<br>";
