@@ -4,12 +4,16 @@
         private $nom;
         private $edad;
         private $numMatricula;
+        //Modificaciones Ejer 3
+
+
         const TASA = 2;
 
         function __construct ($nombre, $e,$nMatricula){
             $this ->nom=$nombre;
             $this ->edad=$e;
             $this -> numMatricula = $nMatricula;
+ 
         }
 
 

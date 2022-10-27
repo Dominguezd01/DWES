@@ -2,9 +2,9 @@
     require_once("./Alumno.php");
     class AlumnoBecado extends Alumno{
         private $importeBeca;
-        function __construct($nombre, $e,$nMat, $importe)
+        function __construct($nombre, $e,$nMat, $importe,$notaPrimero, $notaSegundo)
         {
-            parent::__construct($nombre, $e, $nMat,$importe);
+            parent::__construct($nombre, $e, $nMat,$notaPrimero, $notaSegundo);
             $this -> importeBeca = $importe;
         }
 
