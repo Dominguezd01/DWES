@@ -14,10 +14,11 @@
 
 
 
+        /*
         function __destruct(){
-            echo "$this->nom ha sido destruido";
+           echo "$this->nom ha sido destruido";
         }
-
+        */
         function __get($atrib){
             return $this->$atrib;
         }

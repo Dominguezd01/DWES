@@ -1,6 +1,7 @@
 <?php
     require_once("./AlumnoBecado.php");
-    $ana = new Alumno("😒", 27,007,25);
+    echo "--------------CON CLASE ALUMNO---------------<br>";
+    $ana = new Alumno("Manolo", 27,007,25);
     
     echo $ana -> nom,"<br>";
     echo $ana -> edad,"<br>";
@@ -14,7 +15,7 @@
     $ana -> visualizar();
     
     
-    echo "------------------------------------<br>";
+    echo "--------------CON CLASE ALUMNO BECADO---------------<br>";
     $ana2 = new AlumnoBecado("Daniel", 27,007,25);
     
     echo $ana2 -> nom,"<br>";
