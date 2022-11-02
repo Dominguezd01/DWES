@@ -1,6 +1,4 @@
 <?php
-
-
     abstract class Abstracta2 {
         const VALOR1 = "FIJO";
         static private $valor2 = 1;
@@ -8,6 +6,7 @@
         abstract protected function mensaje();
         static function modificar_static(){
             self::$valor2++;
+            return self::$valor2;
         }
 
         function otros(){
