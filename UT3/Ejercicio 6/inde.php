@@ -1,4 +1,15 @@
+<?php
+    if(isset($_POST['color'])){
+        if($_POST['color'] == "blanco"){
+            echo "Enhorabuena";
+            exit("<br>Fin de la app");
+            //se podria añadir un <a href=""
 
+        }else{
+            echo "Intentalo de nuevo";
+        }
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,12 +19,12 @@
     <title>Ejercicio 5</title>
 </head>
 <body>
-    <form action="./SegundaPag.php"  method="POST">
+    <form  method="POST">
         De que color es el cielo?
         <input type="text" name="color"/>
         <input type="submit" name="enviar"/>
     </form>
- 
+    <p></p>
 
 </body>
 </html>
