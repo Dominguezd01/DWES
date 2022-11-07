@@ -1,15 +1,13 @@
 <?php
-    if(isset($_POST['color'])){
-        if($_POST['color'] == "blanco"){
+    if (isset($_POST['color'])) {
+        if ($_POST['color'] == "blanco") {
             echo "Enhorabuena";
             exit("<br>Fin de la app");
-            //se podria añadir un <a href=""
-
-        }else{
+        } else {
             echo "Intentalo de nuevo";
         }
     }
-    ?>
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
