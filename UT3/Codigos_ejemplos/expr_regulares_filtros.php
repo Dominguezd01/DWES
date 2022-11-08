@@ -2,7 +2,8 @@
 <head>
 <meta charset="utf-8">
 <title> Patterns </title>
-</Head><body>
+</head>
+<body>
 <?php
 $d="";
 if ($_SERVER["REQUEST_METHOD"] == "POST")
