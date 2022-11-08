@@ -1,4 +1,5 @@
 <?php
+require_once("./datos.inc");
 //funcion validacion
 function valida_dato()
 {
