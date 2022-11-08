@@ -1,28 +1,14 @@
 <?php
 require_once("./datos.inc");
-//funcion validacion
-function valida_dato()
-{
-    return preg_match("/^[a-z]{3,}/i", $_POST['color']);
-}
-$ErrorDato = "";
+require_once("./funciones.php");
+
 if (isset($_POST['enviar'])) {
-    if (!empty($_POST['color'])){
-        if (valida_dato()){
-            if($_POST['color'] == "blanco"){
-                echo "Acertaste";
-                exit("<br>Fin de la app");
-            }else{
-                echo "Fallaste";
-            }
-        }else {
-            $ErrorDato = "Error. El dato no es un string";
-            echo $ErrorDato;
-        } 
-    }else{
-        echo "No has enviado nada";
-    }
+    tratamiento();
+}else{
+    echo "No has enviado nada";
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
