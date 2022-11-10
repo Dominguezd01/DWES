@@ -1,6 +1,7 @@
 <?php
 function comprobar()
 {
+    
     if (isset($_POST["num1"]) && isset($_POST["num2"]) && filter_var($_POST["num1"], FILTER_VALIDATE_INT) && filter_var($_POST["num2"], FILTER_VALIDATE_INT)) {
         $num1 = $_POST["num1"];
         $num2 = $_POST["num2"];

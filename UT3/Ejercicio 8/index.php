@@ -1,13 +1,16 @@
 <?php
-    
+function multiplicarEntrada (){
+    $resultado = "";
     if(isset($_POST["num"]) && filter_var($_POST["num"],FILTER_VALIDATE_INT)){
         for($i = 0; $i<=10; $i++){
-            echo $_POST["num"]." X ". $i. " = ".$_POST["num"]* $i."<br>";
+            $resultado .= $_POST["num"]." X ". $i. " = ".$_POST["num"]* $i."<br>";
         }
     }else{
         echo "Introduce un numero valido";
     }
-
+    return $resultado;
+}
+echo multiplicarEntrada()
 ?>
 <!DOCTYPE html>
 <html lang="en">
