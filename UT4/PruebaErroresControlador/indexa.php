@@ -1,20 +1,20 @@
 <?php
     set_error_handler("miControlador");
 
-    $dividir =  5/0;
+    //$dividir =  5/0;
     $cadena = "a";
-    restore_error_handler();
+   set_error_handler("miControlador");
     if(!is_numeric($cadena)){
-        trigger_error("No numerico",E_USER_NOTICE);
+        trigger_error("Valor no numerico",E_USER_NOTICE);
     }
-
+    CONST a = "Hola";
+    CONST a = "ADIOS";
     function miControlador ($nivel, $mensaje){
         switch($nivel){
-            case E_WARNING: 
-                $mensaje = "No se puede dividir por cero";
-                echo "Error de tipo WARNING: $mensaje";
-                break;
             case E_USER_NOTICE:
+                echo "Error de tipo Notice, $mensaje<br>";
+                break;
+            case E_NOTICE:
                 echo "Error de tipo Notice, $mensaje";
                 break;
             default:
