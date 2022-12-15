@@ -1,4 +1,5 @@
 <?php
+session_start();
 function url($url){
 	//si la directiva de configuración session.use_trans_sid
 	//está en 0 (no se realiza ninguna transmisión automática por URL) y
@@ -17,7 +18,7 @@ function url($url){
 	/*
 ini_set("session.use_cookies",0);
 ini_set("session.use_only_cookies", 0);
-ini_set("session.use_trans_sid", 0)
+
 session_start();
 echo url('pagina2.php').'<br>';
 echo url('pagina3.php?nombre=Esther').'<br>';	.
