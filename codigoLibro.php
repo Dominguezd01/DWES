@@ -1,0 +1,2 @@
+<?php
+functionurl($url)//Si la directiva de configuración session.use_trans_sid//está en 0 (no se realiza ninguna transmisión automática por URL) y//si SID no está vacío (el equipo ha rechazado la cookie), entonces//debemos gestionar la transmisión.if'session.use_trans_sid'0and''//Agregar la constante SID detrás de la URL con un ?//si todavía no hay ningún parámetro, o con un & en//caso contrario.'?'FALSE'?''&'return//Abrir/reactivar la sesión.//Algunas pruebas.echo'pagina2.php''<br />'echo'pagina3.php?nombre=Olivier''<br />'?>
