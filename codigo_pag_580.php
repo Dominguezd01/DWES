@@ -1,5 +1,6 @@
 <?php
-session_start();
+//session_start();
+/*
 function url($url){
 	//si la directiva de configuración session.use_trans_sid
 	//está en 0 (no se realiza ninguna transmisión automática por URL) y
@@ -16,6 +17,7 @@ function url($url){
 		return $url;
 	}
 	/*
+
 ini_set("session.use_cookies",0);
 ini_set("session.use_only_cookies", 0);
 

@@ -8,9 +8,9 @@
 </head>
 <body>
     <?php
-        session_start();
-        echo "Esto es el SID", SID;
-        echo "Hola ".$_SESSION["nombre"]
+        //session_start();
+       // echo "Esto es el SID", SID;
+        //echo "Hola ".$_SESSION["nombre"]
     ?>
 </body>
 </html>
