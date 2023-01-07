@@ -7,24 +7,28 @@
     <title>Document</title>
 </head>
 <style>
+    :root{
+        color-scheme: dark;
+    }
     body{
         display: grid;
         place-items: center;
-    }
-    table, td, tr{
-        border: black solid 2px;
+    } 
+    tr, td{
+        padding-right: 1em;
     }
     #botonPagar{
-        background-color: #d6b2b2;
+        background-color: #FE94C0;
         padding: 0.5em;
         text-decoration: none;
-        color: black;
+        color: white;
         border-radius: 10px;
         transition: 0.5s;
     }
     #botonPagar:hover{
-        color:white;
-        background-color: #cf8c8c;
+        background-color: #F3D4E1;
+        color: black;
+        padding: 0.6em;
     }
 </style>
 <body>
@@ -57,6 +61,6 @@
             </td>
         </tr>
     </table><br>
-    <a id="botonPagar"href="./pagos.php">Pagar ahora</a>
+    <a id="botonPagar"href="./comprar.php">Comprar ahora</a>
 </body>
 </html>
