@@ -56,7 +56,9 @@
     function sentenciaDB($mysqli){
         $mysqli->real_query("Select * from alumno");
         $sentencia = $mysqli->use_result();
+        var_dump($sentencia);
         foreach($sentencia as $fila){
+            var_dump($fila);
            mostrarUsuario($fila["nombre"], $fila["id_al"], $fila["id_curso"], $fila["edad"]);
         }
     }
@@ -75,14 +77,15 @@
 
     function insertarUsuario($mysqli){
         $array = [
-            "id_al" => $_POST["idAl"],
+            "id_al" => intval($_POST["idAl"]),
             "nombre" => $_POST["nombre"],
-            "edad" => $_POST["edad"],
-            "id_curso" => $_POST["idCurso"]
+            "edad" => intval($_POST["edad"]),
+            "id_curso" => intval($_POST["idCurso"])
         ];
 
         $mysqli ->real_query("INSERT INTO alumno (id_al, nombre, edad, id_curso) VALUES ('$array[id_al]', '$array[nombre]', '$array[edad]', '$array[id_curso]');");
         sentenciaDB($mysqli);
+ 
         
     }
 
