@@ -1,0 +1,15 @@
+update proyectar set recaudacion=8000.50 where id_cine= "cine1" and titulo="Dolor y gloria";
+update proyectar set recaudacion=9000.00 where id_cine= "cine2" and titulo="Dolor y gloria";
+update proyectar set recaudacion=7000.00 where id_cine= "cine3" and titulo="Dolor y gloria";
+update proyectar set recaudacion=6000.00 where id_cine= "cine4" and titulo="Dolor y gloria";
+update proyectar set recaudacion=10000.00 where id_cine= "cine5" and titulo="Dolor y gloria";
+update proyectar set recaudacion=2000.45 where id_cine= "cine1" and titulo="La piel que habito";
+update proyectar set recaudacion=8000.45 where id_cine= "cine2" and titulo="La piel que habito";
+update proyectar set recaudacion=8000.45 where id_cine= "cine3" and titulo="La piel que habito";
+update proyectar set recaudacion=9000.45 where id_cine= "cine4" and titulo="La piel que habito";
+update proyectar set recaudacion=3000.45 where id_cine= "cine5" and titulo="La piel que habito";
+update proyectar set recaudacion=8000.00 where id_cine= "cine3" and titulo="Historia de un matrimonio";
+update proyectar set recaudacion=5000.00 where id_cine= "cine4" and titulo="Historia de un matrimonio";
+update proyectar set recaudacion=4000.00 where id_cine= "cine3" and titulo="Erase una vez...Hollywood";
+update proyectar set recaudacion=7000.45 where id_cine= "cine4" and titulo="Erase una vez...Hollywood";
+update proyectar set recaudacion=12000.45 where id_cine= "cine5" and titulo="Erase una vez...Hollywood";

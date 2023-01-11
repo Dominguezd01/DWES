@@ -1,0 +1,16 @@
+INSERT INTO `proyectar` (`titulo`, `id_cine`, `fecha_proy`) VALUES
+('Dolor y gloria', 'CINE1', '2019-11-15'),
+('Dolor y gloria', 'CINE2', '2019-11-15'),
+('Dolor y gloria', 'CINE3', '2019-11-15'),
+('Dolor y gloria', 'CINE4', '2019-11-15'),
+('Dolor y gloria', 'CINE5', '2019-11-15'),
+('Erase una vez...Hollywood', 'CINE1', '2019-11-01'),
+('Erase una vez...Hollywood', 'CINE3', '2019-11-01'),
+('Erase una vez...Hollywood', 'CINE4', '2019-11-01'),
+('Historia de un matrimonio', 'CINE3', '2019-10-15'),
+('Historia de un matrimonio', 'CINE4', '2019-10-15'),
+('La piel que habito', 'CINE1', '2010-10-01'),
+('La piel que habito', 'CINE2', '2010-10-01'),
+('La piel que habito', 'CINE3', '2010-10-01'),
+('La piel que habito', 'CINE4', '2010-10-01'),
+('La piel que habito', 'CINE5', '2010-10-01');
