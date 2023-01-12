@@ -50,6 +50,8 @@
 <?php
 
     $mysqli = new mysqli("localhost", "root", "", "peliculas", 3306);
+
+    
     
     function sentenciaDB($mysqli){
         $mysqli->real_query("Select * from alumno");

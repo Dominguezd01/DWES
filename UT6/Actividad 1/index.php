@@ -12,7 +12,7 @@
     }
     body{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 5em;
         row-gap: 5em;
         place-content: center;
@@ -47,8 +47,16 @@
                 <input type="number" placeholder="Id Curso" name="idCurso">
                 <input type="number" placeholder="Edad" name="edad"><br>
             </div>
-            <input type="submit" name="enviar">
+            <input type="submit" name="enviarInsertar">
         </form>
+
+        <form action="" method="POST" id="formBorrar">
+            <div id="inputContainer">
+                <input type="number" placeholder="Id Alumno" name="idAlBorrar">
+            </div>
+            <input type="submit" name="enviarBorrar">
+        </form>
+
 
         <div id="alumnos">
 
@@ -57,7 +65,6 @@
 
 </html>
 <?php
-
     $mysqli = new mysqli("localhost", "root", "", "ciclos", 3306);
 
     function sentenciaDB($mysqli){
@@ -81,7 +88,8 @@
               </div>";
     }
 
-    if(isset($_POST["enviar"])){insertarUsuario($mysqli);}
+    if(isset($_POST["enviarInsertar"])){insertarUsuario($mysqli);}
+    if(isset($_POST["enviarBorrar"])){borrarUsuario($mysqli);}
 
     function insertarUsuario($mysqli){
         $array = [
@@ -95,6 +103,13 @@
         sentenciaDB($mysqli);
  
         
+    }
+
+    function borrarUsuario($mysqli){
+        $id_borrar = intval($_POST["idAlBorrar"]);
+        //var_dump($id_borrar);
+        $mysqli ->real_query("DELETE FROM alumno WHERE id_al='$id_borrar';");
+        //sentenciaDB($mysqli);
     }
 
     sentenciaDB($mysqli);
